@@ -19,7 +19,7 @@ function Info(props) {
 
 function Header() {
     return <div className="header content-odd">
-        <img src="/logo192.png" className="personal-img" alt="logo" />
+        <img src="/logoFA.png" className="personal-img" alt="logo" />
             <table>
                 <tbody>
                     {Object.keys(infoData).map((key,index) => <Info key={index} name={key} value={infoData[key]} />)}
