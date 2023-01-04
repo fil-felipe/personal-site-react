@@ -1,50 +1,47 @@
+import { v4 as uuidv4 } from 'uuid';
+import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
+import {useState} from 'react';
 
-const contentData = [
-    {
-        blockTitle: "Education",
-        blockContent: [
-            {
-                contentTitle: "High School",
-                contentDetail: "2007 - 2011"
-            },
-            {
-                contentTitle: "Bachelor Study",
-                contentDetail: "2011 - 2014"
-            }
-        ]
-    },
-    {
-        blockTitle: "Work experience",
-        blockContent: [
-            {
-                contentTitle: "Fischer",
-                contentDetail: "2007 - 2011"
-            },
-            {
-                contentTitle: "TNT (Accenture)",
-                contentDetail: "2011 - 2014"
-            },
-            {
-                contentTitle: "BMW financial Services",
-                contentDetail: "2014 - 2018"
-            }
-        ]
-    },
-    {
-        blockTitle: "Test block single",
-        blockContent: "test infor about such block"
+
+function stringContentType(string) {
+    if (string.length > 20) {
+        return <p>{string}</p>
+    } else {
+        return  "( " + string + " )"
     }
-];
+}
+
+function arrayConentType(array) {
+    return <ul>
+        {array.map(element => { return <li key={uuidv4()}> <DoubleArrowIcon fontSize="small" /> {element} </li> }
+        )}
+    </ul>
+}
+
+
 
 function ContentList(props) {
-    
+    const [visible,setVisible] = useState(false);
+
+    function changeView() {
+        setVisible((prevInfo) => {
+            return prevInfo ? false : true
+        })
+    }
+
+
     if (!Array.isArray(props.blockContent)) {
         return <p>{props.blockContent}</p>
     } else {
-        // return 
-        // <p>{props.blockContent[0].contentTitle}</p>
         return <ul>
-             { props.blockContent.map((element, index) => { return <li key={index}>{element.contentTitle}</li>})} 
+             { props.blockContent.map((element, index) => { 
+                return <li key={index} onClick={changeView} onMouseEnter={() => {setVisible(true)}} > 
+                    <DoubleArrowIcon fontSize="small" /> 
+                    {element.contentTitle} 
+                    {element.contentString && stringContentType(element.contentString)} 
+                    {element.contentArray && visible && arrayConentType(element.contentArray)}  
+                </li>
+                })} 
             </ul>;
         }
 }
@@ -57,11 +54,11 @@ function ContentElement(props) {
     </div>
 }
 
-function Content() {
+function Content(props) {
     return (
         <div className="content">
            {
-            contentData.map((contentElement, index) => {
+            props.content.map((contentElement, index) => {
                 return <ContentElement 
                     key={index} 
                     id={index} 
@@ -75,4 +72,3 @@ function Content() {
 }
 
 export default Content;
-export {contentData};

@@ -1,5 +1,9 @@
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 const infoData = {
     Name: "Filip Adamek",
     Birthdate: "04-05-1991",
@@ -17,14 +21,25 @@ function Info(props) {
     </tr>
 }
 
-function Header() {
+function Header(props) {
+
     return <div className="header content-odd">
-        <img src="/logoFA.png" className="personal-img" alt="logo" />
-            <table>
-                <tbody>
-                    {Object.keys(infoData).map((key,index) => <Info key={index} name={key} value={infoData[key]} />)}
-                </tbody>
-            </table>
+    <Container fluid >
+        <Row>
+        <Col md="auto">
+            <img src="/logoFA.png" className="personal-img" alt="logo" />
+        </Col>
+        <Col className="personal-info">
+        <table>
+                    <tbody>
+                        {props.content.map((element,index) => <Info key={element.headerTitle} name={element.headerTitle} value={element.headerContent} />)}
+                    </tbody>
+                </table> 
+        </Col>
+        </Row>
+    </Container>
+                
+
     </div>;
 }
 
