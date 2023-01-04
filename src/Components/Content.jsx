@@ -11,16 +11,14 @@ function stringContentType(string) {
     }
 }
 
-function arrayConentType(array) {
+function ArrayConentType(props) {
     return <ul>
-        {array.map(element => { return <li key={uuidv4()}> <DoubleArrowIcon fontSize="small" /> {element} </li> }
+        {props.array.map(element => { return <li key={uuidv4()}> <DoubleArrowIcon fontSize="small" /> {element} </li> }
         )}
     </ul>
 }
 
-
-
-function ContentList(props) {
+function ArrayElement(props) {
     const [visible,setVisible] = useState(false);
 
     function changeView() {
@@ -29,18 +27,34 @@ function ContentList(props) {
         })
     }
 
+    return <li key={props.key} onClick={changeView} onMouseEnter={() => {setVisible(true)}}>
+        <DoubleArrowIcon fontSize="small" /> 
+        {props.contentTitle} 
+        {props.contentString && stringContentType(props.contentString)} 
+        {props.contentArray && visible && <ArrayConentType array={props.contentArray} />}  
+    </li>
+}
+
+
+
+function ContentList(props) {
 
     if (!Array.isArray(props.blockContent)) {
         return <p>{props.blockContent}</p>
     } else {
         return <ul>
              { props.blockContent.map((element, index) => { 
-                return <li key={index} onClick={changeView} onMouseEnter={() => {setVisible(true)}} > 
+                {/* return <li key={index} onClick={changeView} onMouseEnter={() => {setVisible(true)}} > 
                     <DoubleArrowIcon fontSize="small" /> 
                     {element.contentTitle} 
                     {element.contentString && stringContentType(element.contentString)} 
-                    {element.contentArray && visible && arrayConentType(element.contentArray)}  
-                </li>
+                    {element.contentArray && visible && <ArrayConentType array={element.contentArray} />}
+                </li> */}
+                return <ArrayElement key={index} 
+                    contentTitle={element.contentTitle && element.contentTitle} 
+                    contentString={element.contentString && element.contentString} 
+                    contentArray={element.contentArray && element.contentArray}
+                    />
                 })} 
             </ul>;
         }

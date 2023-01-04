@@ -31,7 +31,7 @@ const dataInput = [
                         {
                             contentTitle: "High School",
                             contentString: "2007 - 2011",
-                            contentArray: ["Theory about economy, accounting, administration and company law fundamentals.","Practical knowledge about office software and administration tasks.", "1st prize on national economy competition."]
+                            contentArray: ["School profile - economy", "Theory about economy, accounting, administration and company law fundamentals.","Practical knowledge about office software and administration tasks.", "1st prize on national economy competition."]
                         },
                         {
                             contentTitle: "Bachelor Study",

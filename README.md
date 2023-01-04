@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### TODO ###
+
+Create and download CV as PDF
+https://react-pdf.org/
+https://www.geeksforgeeks.org/how-to-download-pdf-file-in-reactjs/
+
+Connect with google big table to store content outside script (allow to update or add content)
+https://github.com/googleapis/nodejs-bigtable#readme

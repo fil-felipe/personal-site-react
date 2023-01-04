@@ -7,7 +7,7 @@ import {contentData} from "./Content";
 function LangButton(props) {
     return <img src={"/"+props.lang+".png"} width="30" height="30" className="d-inline-block align-top" alt="logo" onClick={(event) => {
         props.handleLangClick(props.lang);
-        event.preventDefault();
+        event.preventDefault(); /* decide if we really don't want to refresh page. mainly in case of pdf creation */
         }}/>
 }
 
