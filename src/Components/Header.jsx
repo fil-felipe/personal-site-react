@@ -27,7 +27,7 @@ function Header(props) {
     <Container fluid >
         <Row>
         <Col md="auto">
-            <img src="/logoFA.png" className="personal-img" alt="logo" />
+            <img src="/logoPerson.png" className="personal-img" alt="logo" />
         </Col>
         <Col className="personal-info">
         <table>
