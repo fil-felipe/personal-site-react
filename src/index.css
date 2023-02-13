@@ -67,16 +67,16 @@
     background-color: #3C6255; 
     color: white;
     padding-left: 3rem;
-    padding-bottom: 1rem;
-    padding-top: 0.5rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
 }
 
 .content-even {
     background-color: #61876E; 
     color: white;
     padding-left: 3rem;
-    padding-bottom: 1rem;
-    padding-top: 0.5rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
 }
 
 /* .content-alternative {
