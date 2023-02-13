@@ -17,7 +17,7 @@ const Img = styled('img')({
 
 function Header(props) {
     return (
-        <Grid container spacing={2} className="header content-odd">
+        <Grid container >
             <Grid item>
                 <Img src="/logoPerson.png" className="personal-img" alt="logo" />
             </Grid>
