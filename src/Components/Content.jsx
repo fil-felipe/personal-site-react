@@ -27,7 +27,7 @@ function ArrayElement(props) {
         })
     }
 
-    return <li key={props.key} onClick={changeView} onMouseEnter={() => {setVisible(true)}}>
+    return <li key={props.key} onClick={changeView} /*onMouseEnter={() => {setVisible(true)}}*/>
         <DoubleArrowIcon fontSize="small" /> 
         {props.contentTitle} 
         {props.contentString && stringContentType(props.contentString)} 
@@ -44,12 +44,6 @@ function ContentList(props) {
     } else {
         return <ul>
              { props.blockContent.map((element, index) => { 
-                {/* return <li key={index} onClick={changeView} onMouseEnter={() => {setVisible(true)}} > 
-                    <DoubleArrowIcon fontSize="small" /> 
-                    {element.contentTitle} 
-                    {element.contentString && stringContentType(element.contentString)} 
-                    {element.contentArray && visible && <ArrayConentType array={element.contentArray} />}
-                </li> */}
                 return <ArrayElement key={index} 
                     contentTitle={element.contentTitle && element.contentTitle} 
                     contentString={element.contentString && element.contentString} 

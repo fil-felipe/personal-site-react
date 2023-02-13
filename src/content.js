@@ -9,7 +9,7 @@ const dataInput = [
                 },
                 {
                     headerTitle: "Birthdate",
-                    headerContent: "04-05-1991k"
+                    headerContent: "04-05-1991"
                 },
                 {
                     headerTitle: "Birthplace",
@@ -37,6 +37,16 @@ const dataInput = [
                             contentTitle: "Bachelor Study",
                             contentString: "2011 - 2014",
                             contentArray: ["Study realized in Cracow University of Economy", "Faculty - production engineering and management"]
+                        },
+                        {
+                            contentTitle: "Erasmus programm",
+                            contentString: "2011 - 2014",
+                            contentArray: ["One semester studied in Germany", "Kiel University of Applied Sciences"]
+                        },
+                        {
+                            contentTitle: "Master study",
+                            contentString: "2015 - 2016",
+                            contentArray: ["Study realized in SGH Warsaw School of Economics", "Faculty - finance and accounting"]
                         }
                     ]
                 },
@@ -45,15 +55,28 @@ const dataInput = [
                     blockContent: [
                         {
                             contentTitle: "Fischer",
-                            contentString: "2007 - 2011"
+                            contentString: "2007 - 2011",
+                            contentArray: ["Accounting department.", "Responsible mainly for costs accounting.", "Working on SAP software."]
                         },
                         {
                             contentTitle: "TNT (Accenture)",
-                            contentString: "2011 - 2014"
+                            contentString: "2011 - 2014",
+                            contentArray: ["Accounting department.", "Responsible mainly for intercompany costs accounting.", "Working on SAP software."]
                         },
                         {
                             contentTitle: "BMW financial Services",
-                            contentString: "2014 - 2018"
+                            contentString: "2014 - 2019",
+                            contentArray: ["Controlling department.", "Responsible for management reports creation.", "Working mainly on MS office software."]
+                        },
+                        {
+                            contentTitle: "Coca Cola HSBC",
+                            contentString: "2019 - 2020",
+                            contentArray: ["Controlling department.", "Responsible for production costs controlling.", "Working mainly on MS office and SAP software."]
+                        },
+                        {
+                            contentTitle: "Aion Bank",
+                            contentString: "2021 - now",
+                            contentArray: ["Credit Risk department.", "Responsible reporting creation and processes automatization", "Create python application for automate credit risk task.", "Create internal data lake structer for data creation based on AutomateNow applicataion.", "Working mainly with SQL, Python"]
                         }
                     ]
                 },
@@ -95,7 +118,7 @@ const dataInput = [
                 },
                 {
                     headerTitle: "Data urodzenia",
-                    headerContent: "04-05-1991k"
+                    headerContent: "04-05-1991"
                 },
                 {
                     headerTitle: "Miejsce urodzenia",
@@ -106,7 +129,7 @@ const dataInput = [
                     headerContent: "+48 512-737-700"
                 },
                 {
-                    headerTitle: "Email",
+                    headerTitle: "Email:",
                     headerContent: "filip.adamek@outlook.com"
                 },
             ],
@@ -121,7 +144,18 @@ const dataInput = [
                         },
                         {
                             contentTitle: "Studia inżynierskie",
-                            contentString: "2011 - 2014"
+                            contentString: "2011 - 2014",
+                            contentArray: ["Studia realizowane na Uniwersytecie ekonomicznym w Krakowie", "Kierunek - zarządzanie i inżynieria produkcji"]
+                        },   
+                        {
+                            contentTitle: "Wymiana studencka Erasmus",
+                            contentString: "2011 - 2014",
+                            contentArray: ["Semestr studiów w Niemczech", "na uczelni technicznej Fachhochschule kiel"]
+                        },
+                        {
+                            contentTitle: "Studia magisterskie",
+                            contentString: "2015 - 2016",
+                            contentArray: ["Studia realizowane w Szkole Głównej Handlowej w Warszawie", "Kierunek - finanse i rachunkowość"]
                         }
                     ]
                 },
@@ -130,15 +164,28 @@ const dataInput = [
                     blockContent: [
                         {
                             contentTitle: "Fischer",
-                            contentString: "2007 - 2011"
+                            contentString: "2007 - 2011",
+                            contentArray: ["Dział księgowości.", "Odpowiedzialny za księgowanie kosztów.", "Praca z programem SAP."]
                         },
                         {
                             contentTitle: "TNT (Accenture)",
-                            contentString: "2011 - 2014"
+                            contentString: "2011 - 2014",
+                            contentArray: ["Dział księgowości.", "Odpowiedzialny za księgowanie rozliczeń między oddziałami.", "Praca z programem SAP."]
                         },
                         {
                             contentTitle: "BMW financial Services",
-                            contentString: "2014 - 2018"
+                            contentString: "2014 - 2019",
+                            contentArray: ["Dział kontrollingu.", "Odpowiedzialny za tworzenie i generowanie raportów dla zarządu.", "Praca z pakietem MS Office."]
+                        },
+                        {
+                            contentTitle: "Coca Cola HSBC",
+                            contentString: "2019 - 2020",
+                            contentArray: ["Dział kontrollingu.", "Odpowiedzialny za kontrolę kosztów produkcji", "Praca z pakietem MS Office oraz programem SAP."]
+                        },
+                        {
+                            contentTitle: "Aion Bank",
+                            contentString: "2021 - now",
+                            contentArray: ["Dział ryzyka kredytowego", "Odpowiedialny za raportowanie i automatyzację procesów", "Tworzenie aplikacji w Python dla potrzeb działu ryzyka kredytowego.", "Tworzenie bazy danych w oparciu o narzędzia do automatyzacji (Takie jak AutomateNow).", "Praca z językami programowania SQL, Python, JavaScript (React)"]
                         }
                     ]
                 },
