@@ -91,3 +91,16 @@ footer {
     text-align: center;
     width: 100%;
 }
+
+/* Mobile and Tablet */
+@media (max-width: 480px) {
+    .content-odd {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .content-even {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  
+  }
