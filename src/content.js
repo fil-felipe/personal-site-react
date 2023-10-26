@@ -1,6 +1,5 @@
 const dataInput = [
-    {
-        language: "eng",
+    { language: "eng",
         content: {
             headerData: [
                 {
@@ -12,8 +11,8 @@ const dataInput = [
                     headerContent: "04-05-1991"
                 },
                 {
-                    headerTitle: "Birthplace",
-                    headerContent: "Cracow (Poland)"
+                    headerTitle: "Residence",
+                    headerContent: "Warsaw (Poland)"
                 },
                 {
                     headerTitle: "Phone",
@@ -25,93 +24,164 @@ const dataInput = [
                 },
             ],
             mainData: [
-                {
-                    blockTitle: "Education",
-                    blockInfo: "My Eduction journey was very interesting...",
+                {blockTitle: "Work experience",
+                blockInfo: "I was experience mainly in finance departments. However always focused on automatization of tasks using advanced IT skills. Currently I develop my carrier in the programming area where my finance experience can be an asset to understand business background of the applications which I will create and maintain.",
+                blockContent: [
+                    {
+                        contentTitle: "Aion Bank",
+                        contentImg: "/aion_bank.png",
+                        contentString: "2021 - now",
+                        contentArray: ["Credit Risk department.", "Responsible reporting creation and processes automatization", "Create python application for automate credit risk task.", "Create internal data lake structer for data creation based on AutomateNow applicataion.", "Working mainly with SQL, Python"]
+                    },
+                    {
+                        contentTitle: "Coca Cola HSBC",
+                        contentImg: "/Coca_cola_hbc_pl.jpg",
+                        contentString: "2019 - 2020",
+                        contentArray: [
+                            "Working in controlling department."
+                            , "Business partnering with plant entities as cooperation in cost control and efficiency areas."
+                            , "Financial data reporting to the local directors and to the headquarter departments."
+                            , "Creation of reports which support all stakeholders with cost control and efficiency monitoring."
+                            , "Future production costs planning on regular basis (budgeting, rolling estimates)."
+                            , "Capital investments planning and profitability analyse."
+                        ]
+                    },
+                    {
+                        contentTitle: "BMW financial Services",
+                        contentImg: "/BMW_FS.jpg",
+                        contentString: "2016 - 2019",
+                        contentArray: [
+                            "Working in controlling department."
+                            , "Financial data reporting to the local directors and to the headquarter departments."
+                            , "Creation of reports which support all stakeholders with products profitability and organization efficiency monitoring."
+                            , "Risk controlling and support process of IFRS implementation."
+                            , "Planning activities (budgeting, rolling estimates) related to sales volume, risk costs, profit loss figures."
+                        ]
+                    },
+                    {
+                        contentTitle: "TNT (Accenture)",
+                        contentImg: "/Accenture.png",
+                        contentString: "2015 - 2016",
+                        contentArray: [
+                            "Accounting of intercompany settlements between international company department."
+                            , "Accounting of duty customs."
+                            , "Working on SAP software."
+                        ]
+                    },
+                    {
+                        contentTitle: "Fischer",
+                        contentString: "2014 - 2014",
+                        contentArray: [
+                            "Accounting department."
+                            , "Responsible mainly for costs accounting."
+                            , "Working on SAP software."
+                        ]
+                    },
+                ]
+            },
+                {blockTitle: "Education",
+                    blockInfo: "School education mainly focused on economy studies with addition of production engineering (mainly food production) scope.",
                     blockContentTitle: "Education history:",
                     blockContent: [
                         {
-                            contentTitle: "High School",
+                            contentTitle: "SGH Warsaw School of Economics",
+                            contentImg: "/godlo-SGH-zielone-png.png",
+                            contentString: " 2015 - 2017",
+                            contentArray: [
+                                "Master study"
+                                , "Faculty - finance and accounting"
+                            ]
+                        },
+                        {
+                            contentTitle: "Fachhochshule Kiel. University of Applied Sciences, Kiel, Niemcy",
+                            contentImg: "/Fachhochschule_Kiel.jpg",
+                            contentString: "IX 2014 - II 2015",
+                            contentArray: [
+                                "One semester studied in Germany"
+                                , "Faculty: Business Management"
+                            ]
+                        },
+                        {
+                            contentTitle: "Cracow University of Economy",
+                            contentImg: "/pieczec_rektorska_bordo_pl.jpg",
+                            contentString: "2011 - III 2015",
+                            contentArray: [
+                                "Bachelor of Engineering"
+                                , "Faculty - production engineering and management"
+                            ]
+                        }, 
+                        {
+                            contentTitle: "Economy High School",
                             contentString: "2007 - 2011",
-                            contentArray: ["School profile - economy", "Theory about economy, accounting, administration and company law fundamentals.","Practical knowledge about office software and administration tasks.", "1st prize on national economy competition."]
-                        },
-                        {
-                            contentTitle: "Bachelor Study",
-                            contentString: "2011 - 2014",
-                            contentArray: ["Study realized in Cracow University of Economy", "Faculty - production engineering and management"]
-                        },
-                        {
-                            contentTitle: "Erasmus programm",
-                            contentString: "2011 - 2014",
-                            contentArray: ["One semester studied in Germany", "Kiel University of Applied Sciences"]
-                        },
-                        {
-                            contentTitle: "Master study",
-                            contentString: "2015 - 2016",
-                            contentArray: ["Study realized in SGH Warsaw School of Economics", "Faculty - finance and accounting"]
+                            contentArray: [
+                                "Theory about economy, accounting, administration and company law fundamentals."
+                                ,"Practical knowledge about office software and administration tasks."
+                                , "1st prize on national economy competition."
+                            ]
                         }
                     ]
                 },
-                {
-                    blockTitle: "Work experience",
+                {blockTitle: "Skills",
+                    blockInfo: "I focus mainly on IT/Programmic skills which are now main interest and plan for development of future carrier.",
                     blockContent: [
                         {
-                            contentTitle: "Fischer",
-                            contentString: "2007 - 2011",
-                            contentArray: ["Accounting department.", "Responsible mainly for costs accounting.", "Working on SAP software."]
-                        },
-                        {
-                            contentTitle: "TNT (Accenture)",
-                            contentString: "2011 - 2014",
-                            contentArray: ["Accounting department.", "Responsible mainly for intercompany costs accounting.", "Working on SAP software."]
-                        },
-                        {
-                            contentTitle: "BMW financial Services",
-                            contentString: "2014 - 2019",
-                            contentArray: ["Controlling department.", "Responsible for management reports creation.", "Working mainly on MS office software."]
-                        },
-                        {
-                            contentTitle: "Coca Cola HSBC",
-                            contentString: "2019 - 2020",
-                            contentArray: ["Controlling department.", "Responsible for production costs controlling.", "Working mainly on MS office and SAP software."]
-                        },
-                        {
-                            contentTitle: "Aion Bank",
-                            contentString: "2021 - now",
-                            contentArray: ["Credit Risk department.", "Responsible reporting creation and processes automatization", "Create python application for automate credit risk task.", "Create internal data lake structer for data creation based on AutomateNow applicataion.", "Working mainly with SQL, Python"]
-                        }
-                    ]
-                },
-                {
-                    blockTitle: "Skills",
-                    blockContent: [
-                        {
-                            contentTitle: "Microsoft and Google Office sotware",
-                            contentString: "7 years work experience",
-                            contentArray: ["Microsoft Excel and Google spreadsheet. Advanced functions with VBA and AppScript", "Microsoft Word and Google Docs. Documentation with graphs and table of contents", "Microsoft Power Point and Google Presentation. Reports automaticaly linked and refreshed based on spreadsheet"]
+                            contentTitle: "Python",
+                            contentImg: "/python-logo-only.png",
+                            contentString: "3 years of work experience + practical courses",
+                            contentArray: [
+                                "Udemy course “100 Days of Code: The Complete Python Pro Bootcamp for 2023”."
+                                , "Practical workshop on DataCamp platform (Data Science, Data Engineering, Data Analyst, Python Programmer)."
+                                , "Reports creation with dynamic graphs based on SQL or Non-SQL data source."
+                                , "Simple model creation and machine learning skills."
+                                , "Building API from scratch based on Flask and Django libraries."
+                                , "Ability to create simple pipelines and data engineering based on Python."
+                            ]
                         },
                         {
                             contentTitle: "SQL",
-                            contentString: "3 years work experience",
-                            contentArray: ["PostgreSQL and BigQuery experience", "Data extraction and creation mainly for reporting purposes", "Automatization of tasks based on procedures and other tools (for example AutomateNow)"]
-                        },
-                        {
-                            contentTitle: "Python",
-                            contentString: "2 years work experience + online practical courses on DataCamp and Udemy",
-                            contentArray: ["Reports creation", "Basic modeling and machine learning", "API creation based on Flask or Django", "Basic data enignering skills with creation of data pipeline.","Example of skills: http//www.google.pl Here will be Python GUI"]
+                            contentImg: "/google-bigquery6102.jpg",
+                            contentString: "3 years of work experience + practical courses",
+                            contentArray: [
+                                "PostgreSQL i BigQuery practical knowledge."
+                                , "Data extraction and manipulation mainly for the reporting purposes."
+                                , "Udey course “Google Big query & PostreSQL: Big query for Data Analysis ”."
+                            ]
                         },
                         {
                             contentTitle: "Java script",
-                            contentString: "1 year experience + online practical course on Udemy",
-                            contentArray: ["Front end creation on React", "Backend creation based on express", "This website as a proof of knowledge", "Example of skills: http//www.google.pl Here will be Python GUI"]
+                            contentImg: "/JavaScript-logo.png",
+                            contentString: "1 rok doświadczenia + szkolenia",
+                            contentArray: [
+                                "Practical knowledge about website creation based on React (This CV is stored on https://filip-adamek.pl/)"
+                                , "Practical knowledge about Web Application with Front-end (React) and Back-end (NodeJS) https://to-do-list-web.filip-adamek.pl/"
+                                , "Udemy course “The Complete 2023 Web Development Bootcamp”."
+                            ]
+                        },
+                        {
+                            contentTitle: "Other IT skills",
+                            contentString: "Work experience or practical knowledge",
+                            contentArray: [
+                                "Git repository experience (Including automatic pipelines, CI-CD and application testing."
+                                , "Practical knowledge of application build and maintenance on the Google Cloud"
+                                , "Certification from Google: Professional Data Engineer."
+                                , "Udemy course “The Ultimate DevOps Bootcamp - 2023”."
+                            ]
+                        },
+                        {
+                            contentTitle: "Microsoft and Google Office sotware",
+                            contentString: "7 years work experience",
+                            contentArray: [
+                                "Microsoft Excel and Google spreadsheet. Advanced functions with VBA and AppScript"
+                                , "Microsoft Word and Google Docs. Documentation with graphs and table of contents"
+                                , "Microsoft Power Point and Google Presentation. Reports automaticaly linked and refreshed based on spreadsheet"
+                            ]
                         }
                     ]
                 }
             ]
         }
     },
-    {
-        language: "pl",
+    {language: "pl",
         content: {
             headerData: [
                 {
@@ -123,8 +193,8 @@ const dataInput = [
                     headerContent: "04-05-1991"
                 },
                 {
-                    headerTitle: "Miejsce urodzenia",
-                    headerContent: "Kraków"
+                    headerTitle: "Miejsce zamieszkania",
+                    headerContent: "Warszawa"
                 },
                 {
                     headerTitle: "Telefon",
@@ -202,7 +272,7 @@ const dataInput = [
                     {
                         contentTitle: "Szkoła Główna Handlowa w Warszawie",
                         contentImg: "https://www.sgh.waw.pl/sites/sgh.waw.pl/files/2021-06/godlo-SGH-zielone-png.png",
-                        contentString: " 2015 - 2016",
+                        contentString: " 2015 - 2017",
                         contentArray: [
                             "Poziom wykształcenia: magister"
                             , "Kierunek: finanse i rachunkowość"
@@ -268,8 +338,8 @@ const dataInput = [
                             contentImg: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png",
                             contentString: "1 rok doświadczenia + szkolenia",
                             contentArray: [
-                                "Budowa aplikacji Front-end (React) https://filip-adamek.pl/"
-                                , "Budowa aplikacji Back-end (NodeJS)"
+                                "Budowa strony internetowej w React (Strona o mnie - CV) https://filip-adamek.pl/"
+                                , "Budowa aplikacji webowej Front-end (React) Back-end (NodeJS) https://to-do-list-web.filip-adamek.pl/"
                                 , "Praktyczne szkolenie z budowania aplikacji webowych “The Complete 2023 Web Development Bootcamp” - realizowane na platformie Udemy"
                             ]
                         },

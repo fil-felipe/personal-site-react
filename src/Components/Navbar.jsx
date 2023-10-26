@@ -12,7 +12,7 @@ function NavbarOwn(props) {
 
     return (
         <div class="navbar-own">
-            {isMobile ? <p>Test content</p> : <p>Test content Vig</p>}
+            {/* {isMobile ? <p>Test content</p> : <p>Test content Vig</p>} */}
             <div class="center-navbar">
                 <h1 id="title">Filip Adamek - {props.lang === "pl" ? "Moja osobista strona" : "Personal Website"}</h1>
             </div>

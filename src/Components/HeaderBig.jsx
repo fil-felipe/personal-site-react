@@ -4,13 +4,14 @@
 function HeaderBig(props) {
     return (
         <div class="header-big">
+            <div class="header-left">
             <img src="/logoPerson.png" class="personal-img" alt="logo" />
-            {/* <h4>{props.Content[0].headerTitle}</h4> */}
+            </div>
                 <div class="header-right">
                     {props.Content.map((element,index) => 
                         <div class="header-detail">
-                            <h4>{element.headerTitle}</h4>
-                            <h4>{element.headerContent}</h4>
+                            <h4 class="header-detail-title">{element.headerTitle}</h4>
+                            <p>{element.headerContent}</p>
                         </div>)}
                 </div>
                 

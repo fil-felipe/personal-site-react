@@ -19,7 +19,7 @@ function App() {
       <NavbarOwn content={content.content.mainData} handleLangClick={setDataLang} lang={content.language}/>
       <HeaderBig Content={content.content.headerData} lang={content.language}/>
       <Main Content={content} lang={content.language}/>
-      <Footer />
+      <Footer lang={content.language}/>
     </div>
 
   );
