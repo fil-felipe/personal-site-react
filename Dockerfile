@@ -1,4 +1,4 @@
-# Stage 0 - Build Frontend Assets
+# syntax=docker/dockerfile:1
 FROM node:18.12.1-slim as build
 
 WORKDIR /app
@@ -7,12 +7,5 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-# Stage 1 - Serve Frontend Assets
-FROM fholzer/nginx-brotli:v1.12.2
-
-WORKDIR /etc/nginx
-ADD nginx.conf /etc/nginx/nginx.conf
-
-COPY --from=build /app/build /usr/share/nginx/html
-EXPOSE 8080
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["node", "server/server.js"]
+EXPOSE 3000

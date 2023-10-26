@@ -1,42 +1,109 @@
-
-/* :root {
-    --space: 1.5em 0;
-    --space: 2em 0;
-} */
-
-.App {
-    font-family: 'Montserrat', sans-serif;
+/*
+color-hunt pallets:
+#F9F7F7
+#DBE2EF
+#3F72AF
+#112D4E
+*/
+body {
+    background-color: #F9F7F7; 
+    color: #F9F7F7;
+    margin: 0;
+}
+.main {
+    background-color: #F9F7F7; 
+    font-family: 'Lato', sans-serif;
+    color:#112D4E;
+    padding: 1%;
 }
 
-.Site {
+.section {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    border-radius: 25px;
+    background-color: #DBE2EF; 
+    padding: 5%;
+    margin: 1% 10% 2%;
+}
+
+.section-clicked {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    border-radius: 25px;
+    background-color: #DBE2EF; 
+    padding: 1% 5% 3%;
+    margin: 1% 10% 2%;
+}
+
+.section-detail-clicked {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #3C6255; 
 }
 
-.Site-content {
-    flex: 1 0 auto;
-    padding: var(--space) var(--space) 0;
-    width: 100%;
+.section-detail-string {
+    padding: 1%;
+    margin: auto 0;
+    /* margin: 1% 10% 2%; */
 }
 
-.Site-content:after {
-    content: '\00a0';
-    display: block;
-    margin-top: var(--space);
-    height: 0;
-    visibility: hidden;
+.section-detail-list {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    border-radius: 25px;
+    background-color: #F9F7F7; 
+    padding: 1%;
+    margin: 1% 10% 2%;
+}
+.section-detail-list-clicked {
+    display:block;
+}
+
+.section-header {
+    cursor: pointer;
 }
 
 .navbar-own {
-    background-color: #EAE7B1;
+    display:flex;
+    background-color: #112D4E;
+    align-items: center;
 }
 
-.header {
-    display: block;
-    /* padding: 3rem; */
-    text-align: left;
+.right-navbar {
+    display:flex;
+    right: 3%;
+    margin: 0 2%;
+}
+
+.lang-button {
+    padding: 0 10%;
+    cursor: pointer;
+}
+
+.center-navbar {
+    margin: auto;
+}
+
+.header-right {
+    display:block;
+}
+
+.header-detail {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    border-radius: 25px;
+    background-color: #F9F7F7; 
+    font-family: 'Lato', sans-serif;
+    color:#112D4E;
+    padding: 1% 10%;
+    /* margin: 0 40% 2%; */
+}
+
+.header-big  {
+    background-color: #112D4E;
+    display:flex;
+    margin: auto;
+    padding: 1%;
 }
 
 .personal-img {
@@ -45,46 +112,15 @@
     margin: auto;
 }
 
-.personal-info {
-    margin:auto;
+.logo-img {
+    border-radius: 10%;
+    width: 15rem;
+    /* height: 248px; */
 }
 
-.header table {
-    justify-content: center;
-    margin: auto auto auto 3rem
-}
-
-.header .td-element {
-    vertical-align: initial;
-    padding-right: 3rem;
-}
-
-.content ul {
-    list-style: '';
-}
-
-.content-odd {
-    background-color: #3C6255; 
-    color: white;
-    padding-left: 3rem;
-    padding-bottom: 3rem;
-    padding-top: 3rem;
-}
-
-.content-even {
-    background-color: #61876E; 
-    color: white;
-    padding-left: 3rem;
-    padding-bottom: 3rem;
-    padding-top: 3rem;
-}
-
-/* .content-alternative {
-    background-color: #A6BB8D; 
-} */
-
-footer {
-    background-color: #EAE7B1;
+#footer {
+    background-color: #112D4E;
+    color: #F9F7F7;
     font-weight:300;
     margin: auto;
     padding: 1rem;
@@ -92,15 +128,27 @@ footer {
     width: 100%;
 }
 
+#title {
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+}
+
 /* Mobile and Tablet */
 @media (max-width: 480px) {
-    .content-odd {
-        padding-left: 0;
-        padding-right: 0;
+    .section {
+        margin-left: 0;
+        margin-right: 0;
     }
-    .content-even {
-      padding-left: 0;
-      padding-right: 0;
+    .section-clicked {
+        margin-left: 0;
+        margin-right: 0;
     }
-  
+    .section-detail-list {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .section-detail-string {
+        margin-left: 0;
+        margin-right: 0;
+    }
   }

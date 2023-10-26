@@ -1,10 +1,11 @@
 
-import NavbarOwn from './Navbar';
-import Header from './Header';
-import Content from './Content';
-import Footer from './Footer';
 import dataInput from '../content';
 import { useState } from 'react';
+import NavbarOwn from './Navbar';
+import HeaderBig from './HeaderBig';
+import Main from './Main';
+import Footer from './Footer';
+
 
 function App() {
   const [content, setContent] = useState(dataInput.find(element => element.language === "eng"));
@@ -15,14 +16,10 @@ function App() {
 
   return (
     <div className="App">
-      <NavbarOwn content={content.content.mainData} handleLangClick={setDataLang}/>
-      <div className="Site">
-      <div className="Site-content">
-        <Header content={content.content.headerData}/>
-        <Content content={content.content.mainData}/>
-      </div>
+      <NavbarOwn content={content.content.mainData} handleLangClick={setDataLang} lang={content.language}/>
+      <HeaderBig Content={content.content.headerData} lang={content.language}/>
+      <Main Content={content} lang={content.language}/>
       <Footer />
-    </div>
     </div>
 
   );
